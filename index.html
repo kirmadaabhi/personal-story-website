@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Story Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script> <!-- Yahan pe script.js file link ki gayi hai -->
+    <!-- Google Sign-In JavaScript library ko load karne ke liye script tag -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Personal Story Website</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Share Your Story</h2>
+            <form id="story-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="story">Your Story:</label><br>
+                <textarea id="story" name="story" rows="4" cols="50" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section>
+            <h2>Featured Stories</h2>
+            <!-- Display some featured stories -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Personal Story Website</p>
+    </footer>
+
+    <!-- Google Sign-In button ko add karne ke liye script -->
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+</body>
+</html>
